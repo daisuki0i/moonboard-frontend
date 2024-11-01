@@ -12,7 +12,7 @@
 
 
 <Skeleton divClass="py-4"/>
-<BottomNav position="fixed" class="p-2 bottom-0 w-full" innerClass="flex justify-around space-x-4 ml-4 bg-black py-4" activeUrl="/">
+<BottomNav position="fixed" class="p-2 bottom-0 w-full" innerClass="flex justify-around space-x-4 bg-black py-4" activeUrl="/">
   <BottomNavItem btnName="Board" on:click={goToMoonboard}>
     <MoonSolid class="w-6 h-6 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-500" />
   </BottomNavItem>
