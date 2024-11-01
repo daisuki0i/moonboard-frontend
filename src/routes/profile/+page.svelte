@@ -40,7 +40,7 @@
     }
 
     const response = await CapacitorHttp.get({
-      url: `http://localhost:3000/users/${userId.value}`,
+      url: `https://moonboard-backend.onrender.com/users/${userId.value}`,
     });
 
     userData = response.data;
@@ -48,7 +48,7 @@
     nameChange = userData.name;
 
     const postResponse = await CapacitorHttp.get({
-      url: "http://localhost:3000/posts",
+      url: "https://moonboard-backend.onrender.com/posts",
     });
 
     posts = postResponse.data;
@@ -62,7 +62,7 @@
   const saveChanges = async () => {
     try {
       const response = await CapacitorHttp.patch({
-        url: `http://localhost:3000/users/${userData._id}`,
+        url: `https://moonboard-backend.onrender.com/users/${userData._id}`,
         headers: {
           "Content-Type": "application/json",
         },

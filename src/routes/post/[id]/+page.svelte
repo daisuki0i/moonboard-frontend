@@ -44,7 +44,7 @@
 
   onMount(async () => {
     const options = {
-      url: `http://localhost:3000/posts/${data.id}`,
+      url: `https://moonboard-backend.onrender.com/posts/${data.id}`,
     };
 
     const response = await CapacitorHttp.get(options);
@@ -61,7 +61,7 @@
     }
 
     const response2 = await CapacitorHttp.get({
-      url: `http://localhost:3000/users/${userId.value}`,
+      url: `https://moonboard-backend.onrender.com/users/${userId.value}`,
     });
     userData = response2.data;
 
@@ -77,7 +77,7 @@
 
   async function heartClickHandler() {
     const response = await CapacitorHttp.patch({
-      url: `http://localhost:3000/users/${userData._id}`,
+      url: `https://moonboard-backend.onrender.com/users/${userData._id}`,
       headers: {
         "Content-Type": "application/json",
       },

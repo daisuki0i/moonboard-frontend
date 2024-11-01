@@ -50,7 +50,7 @@
     }
 
     const response = await CapacitorHttp.get({
-      url: `http://localhost:3000/users/${data.id}`,
+      url: `https://moonboard-backend.onrender.com/users/${data.id}`,
     });
 
     userData = response.data;
@@ -58,7 +58,7 @@
     console.log(userData);
 
     const postResponse = await CapacitorHttp.get({
-      url: "http://localhost:3000/posts",
+      url: "https://moonboard-backend.onrender.com/posts",
     });
 
     posts = postResponse.data;

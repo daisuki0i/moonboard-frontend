@@ -147,7 +147,7 @@
     };
 
     const response = await CapacitorHttp.post({
-      url: "http://localhost:3000/post",
+      url: "https://moonboard-backend.onrender.com/post",
       data: postData,
       headers: {
         "Content-Type": "application/json",

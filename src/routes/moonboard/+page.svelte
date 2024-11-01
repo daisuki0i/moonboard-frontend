@@ -29,7 +29,7 @@
 
   onMount(async () => {
     const options = {
-      url: "http://localhost:3000/posts",
+      url: "https://moonboard-backend.onrender.com/posts",
     };
 
     const response = await CapacitorHttp.get(options);
