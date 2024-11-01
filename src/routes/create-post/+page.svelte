@@ -175,7 +175,7 @@
   ];
 </script>
 
-<div class="relative flex flex-col items-center text-white">
+<div class="relative flex flex-col items-center text-white mt-5">
   <!-- แถบย้อนกลับและปุ่ม Post -->
   <div class="absolute top-5 left-0 w-full flex justify-between items-center px-4 py-2">
     <button on:click={goBack}><ChevronLeft class="w-6 h-6 cursor-pointer" /></button>
